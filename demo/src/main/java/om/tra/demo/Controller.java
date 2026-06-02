@@ -12,8 +12,8 @@ import java.util.List;
 @RestController
 public class Controller {
     @GetMapping("greet")
-    public String greeting(@RequestParam String name){
-        return "Hi " + name ;
+    public String greeting(@RequestParam String name, @RequestParam String age){
+        return "Hi " + name + "Your age is: " + age ;
     }
 
     @GetMapping("Books")
@@ -26,6 +26,7 @@ public class Controller {
            new Book("The Diary of a Young Girl", "553")
         );
     }
-d
+
+
 }
 
